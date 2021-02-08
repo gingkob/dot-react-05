@@ -1,0 +1,34 @@
+.animal-details {
+  border-top: gray solid 1px;
+  margin: 10px 0;
+  border-bottom: gray solid 1px;
+  background-color: beige;
+}
+
+/* @media (max-width: 640px){
+  .animal-details{
+    width: 180px;
+  }
+}
+
+@media (max-width: 580px){
+  .animal-details{
+    width: 160px;
+  }
+}
+
+@media (max-width: 520px){
+  .animal-details{
+    width: 140px;
+  }
+}
+
+@media (max-width: 480px){
+  .animal-details{
+    width: 130px;
+  }
+} */
+
+.animal-details > h4 {
+  margin:10px 0;
+}

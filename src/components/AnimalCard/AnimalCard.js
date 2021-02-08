@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import AnimalDetails from '../AnimalDetails/AnimalDetails';
 
 const AnimalCard = (props) => {
   const { diet, name, size } = props;
   return (
-    <div>
+    <div style={{ textAlign: "center", display: 'flex', flexDirection: "column", width: '30%' }}>
       <h3>{name}</h3>
       <div>{size} kg</div>
-      <div>{diet.join(', ')}.</div>
+      <AnimalDetails diet={diet} />
     </div>
   )
 }
