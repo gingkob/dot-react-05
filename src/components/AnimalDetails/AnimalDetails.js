@@ -14,11 +14,13 @@ const convertFood = (food) => {
   }
 }
 
-const AnimalDetails = ({ diet }) => {
+const AnimalDetails = ({ diet, scientificName }) => {
   return (
     <div className='animal-details'>
       <h4>Details:</h4>
+      <p> Scientific Name: <br /><h4>{scientificName}</h4></p>
       <p>
+
         Diet: {diet.map(item => convertFood(item)).join(' ')}
       </p>
     </div>
